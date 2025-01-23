@@ -1,0 +1,25 @@
+veeams:
+  # - host: phobos.ref                        ## VEEAM_EM_HOSTNAME environment variable is defined, use default values
+  #   port: 9398                              ## default EM API port is 9398
+  #   user: ''                                ## when commented out, use VEEAM_EM_USERNAME environment variable
+  #   password: ''                            ## when commented out, wse VEEAM_EM_PASSWORD environment variable
+  #   protocol: https                         ## default https
+  #   verify_ssl: false                       ## default false
+  #   timeout: 10                             ## default 10 (in seconds)
+  #   keep_session: true                      ## default true
+  #   default_labels:
+  #     - name: veeam_em
+  #       value: my_veeam_em_server.domain
+  #   proxy:                                  ## default, dont use proxy
+  #     url: http://my.proxy.domain:port/
+  #     protocol: https
+
+weblisten:
+  address: 0.0.0.0
+  port: 9247
+
+logger:
+  level: info
+  facility: stdout
+
+metrics_file: "conf/metrics/*_metrics.yml"
